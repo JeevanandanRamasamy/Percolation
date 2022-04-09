@@ -2,15 +2,13 @@
 
 Programming Assignment 1 for Data Structures course
 
-http://coursera.cs.princeton.edu/algs4/assignments/percolation.html
+https://ds.cs.rutgers.edu/assignment-percolation/
 
 ## Problem
 
-Write a program to estimate the value of the percolation threshold via Monte Carlo simulation.
+https://ds.cs.rutgers.edu/wp-content/uploads/sites/82/2021/09/Screen-Shot-2021-09-08-at-7.24.42-PM.png![image](https://user-images.githubusercontent.com/94267209/162585621-4d79343a-91a9-45bb-89b2-524f4561cf6c.png)
 
-Given a composite systems comprised of randomly distributed insulating and metallic materials: what fraction of the materials need to be metallic so that the composite system is an electrical conductor? Given a porous landscape with water on the surface (or oil below), under what conditions will the water be able to drain through to the bottom (or the oil to gush through to the surface)? 
-
-In a famous scientific problem, researchers are interested in the following question: if sites are independently set to be open with probability p (and therefore blocked with probability 1 − p), what is the probability that the system percolates? When p equals 0, the system does not percolate; when p equals 1, the system percolates.
+Percolation is an abstract model for many physical systems. Given a n-by-n grid of sites, each site is open with probability p, the system percolates if and only if any open site in the top row in the grid is connected to any open site in the bottom row by open sites.
 
 ## Solution
 
