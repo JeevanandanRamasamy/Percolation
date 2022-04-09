@@ -1,12 +1,13 @@
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdRandom;
+import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
 
 	private boolean[][] grid;          // gridSize by gridSize grid of sites
 	                                   // true = open site, false = closed or blocked site
-	private WeightedQuickUnionFind wquFind;
+	private WeightedQuickUF wquFind;
 	private int 		gridSize;      // gridSize by gridSize is the size of the grid/system 
 	private int         gridSquared;
 	private int         virtualTop;    // virtual top    index on WeightedQuckUnionFind arrays
@@ -19,7 +20,7 @@ public class Percolation {
 	public Percolation ( int n ){
 		gridSize 	  = n;
 		gridSquared   = gridSize * gridSize;
-		wquFind       = new WeightedQuickUnionFind(gridSquared + 2);
+		wquFind       = new WeightedQuickUF(gridSquared + 2);
 		grid          = new boolean[gridSize][gridSize];   // every site is initialized to closed/blocked
 		virtualTop    = gridSquared;
 		virtualBottom = gridSquared + 1;
